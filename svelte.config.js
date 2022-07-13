@@ -9,9 +9,9 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			pages: '/docs',
-			assets: '/docs'
-		}),
+			pages: 'docs',
+			assets: 'docs'
+		})
 	}
 };
 
