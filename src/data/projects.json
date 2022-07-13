@@ -16,7 +16,7 @@
 			"documentPath": "documents/detecting_ballan_wrasse.pdf"
 		},
 		{
-			"title": "Madshus ski database",
+			"title": "Madshus Ski Database",
 			"about": "Created a Madshus ski database using PhP and mySQL, and making an API to interact with it.",
 			"year": "2021",
 			"codeLink": "https://github.com/MikkelAas/Madshus-ski-database-API",
