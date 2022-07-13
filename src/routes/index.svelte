@@ -1,4 +1,9 @@
 <script context="module">
+	import education from '../data/education.json';
+	import EducationCard from '../lib/EducationCard.svelte';
+
+	const EDUCATIONS = education.education;
+
 	export const prerender = true;
 
 	const LINKEDIN_LINK = 'https://www.linkedin.com/in/mikkel-aas-10a15a1a5/';
@@ -7,9 +12,14 @@
 
 <head>
 	<title>Mikkel Aas</title>
+
+	<!-- Importing the Roboto font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+		rel="stylesheet"
+	/>
 </head>
 
 <div class="main">
@@ -20,6 +30,21 @@
 
 			<li><a href={GITHUB_LINK}>GitHub</a></li>
 		</ul>
+	</div>
+	<div class="body">
+		<div class="education">
+			<h2>Education</h2>
+			{#each EDUCATIONS as education}
+				<EducationCard
+					place={education.place}
+					degree={education.degree}
+					studyProgram={education.studyProgram}
+					startDate={education.startDate}
+					endDate={education.endDate}
+					link={education.link}
+				/>
+			{/each}
+		</div>
 	</div>
 </div>
 
@@ -34,8 +59,7 @@
 		margin: 0;
 		border: 0;
 		padding: 0;
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-			'Open Sans', 'Helvetica Neue', sans-serif;
+		font-family: 'Roboto', sans-serif;
 	}
 	.heading {
 		grid-row: 1/2;
@@ -53,11 +77,21 @@
 		margin: 3%;
 	}
 
-	a {
+	:global(a) {
 		text-decoration: none;
 		color: black;
 	}
-	a:hover {
+	:global(a):hover {
 		color: grey;
+	}
+	.body {
+		display: grid;
+		grid-template-columns: 20% 60% 20%;
+		grid-row: 2 / 3;
+	}
+	.education {
+		grid-column: 2/3;
+		margin: 10%;
+		margin-top: 0%;
 	}
 </style>

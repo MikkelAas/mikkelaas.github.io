@@ -1,0 +1,12 @@
+{
+	"education": [
+		{
+			"place": "NTNU in Gjøvik",
+			"degree": "Bachelor",
+			"studyProgram": "Computer engineering",
+			"startDate": "2019",
+			"endDate": "2022",
+			"link": "https://www.ntnu.no/gjovik"
+		}
+	]
+}
