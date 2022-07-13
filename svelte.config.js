@@ -9,8 +9,8 @@ const config = {
 	preprocess: preprocess(),
 	target: '#svelte',
 
-	prerender: { 
-		default: true 
+	prerender: {
+		default: true
 	},
 
 	kit: {
