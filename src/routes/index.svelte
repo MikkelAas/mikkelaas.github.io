@@ -36,7 +36,7 @@
 	</div>
 	<div class="body">
 		<div class="education">
-			<h2>Education</h2>
+			<h2>Education &#x1F393</h2>
 			{#each EDUCATIONS as education}
 				<EducationCard
 					place={education.place}
@@ -49,7 +49,7 @@
 			{/each}
 		</div>
 		<div class="projects">
-			<h2>Projects</h2>
+			<h2>Projects &#x1F6E0</h2>
 			{#each PROJECTS as project}
 				<ProjectCard
 					title={project.title}
