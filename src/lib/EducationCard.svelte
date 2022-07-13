@@ -11,5 +11,5 @@
 	<h3>{place}</h3>
 	<h4>{degree} in {studyProgram}</h4>
 	<h5>Start {startDate} - End {endDate}</h5>
-	<a href={link}>View site</a>
+	<a href={link}>View site &#x1F517</a>
 </div>
