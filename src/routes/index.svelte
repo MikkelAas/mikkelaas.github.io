@@ -27,10 +27,6 @@
 	:global(body) {
 		margin: 0;
 	}
-	h1 {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-			'Open Sans', 'Helvetica Neue', sans-serif;
-	}
 	.main {
 		display: grid;
 		grid-template-rows: 20% 70% 10%;
@@ -38,6 +34,8 @@
 		margin: 0;
 		border: 0;
 		padding: 0;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+			'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 	.heading {
 		grid-row: 1/2;
