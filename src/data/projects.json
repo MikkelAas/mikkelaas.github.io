@@ -5,7 +5,7 @@
 			"about": "Used Self-Sovereign Identity and Verifiable data to automate the process of applying for unemployment benefits.",
 			"year": "2022",
 			"codeLink": "https://github.com/MikkelAas/bachelor/",
-			"documentPath": "src/documents/bachelor_thesis.pdf",
+			"documentPath": "documents/bachelor_thesis.pdf",
 			"articeLink": "https://www.digi.no/artikler/digital-lommebok-prosjekt-ble-laererikt-bade-for-student-trio-og-nav/520371?key=0HuP6lrL"
 		},
 		{
@@ -13,21 +13,21 @@
 			"about": "Using traditional computer vision techinques and machine learning to detect ballan wrasse in different underwater enivronments.",
 			"year": "2021",
 			"codeLink": "https://gitlab.com/Jakkar/IDATG2206-Project",
-			"documentPath": "src/documents/detecting_ballan_wrasse.pdf"
+			"documentPath": "documents/detecting_ballan_wrasse.pdf"
 		},
 		{
 			"title": "Madshus ski database",
 			"about": "Created a Madshus ski database using PhP and mySQL, and making an API to interact with it.",
 			"year": "2021",
 			"codeLink": "https://github.com/MikkelAas/Madshus-ski-database-API",
-			"documentPath": "src/documents/madshus_ski_database_documents.pdf"
+			"documentPath": "documents/madshus_ski_database_documents.pdf"
 		},
 		{
 			"title": "2D Action Platformer",
 			"about": "Created a 2D action platforming game using Unity and C#.",
 			"year": "2021",
 			"codeLink": "https://github.com/NTNU-IMT3603-PLATFORMER/NTNU-IMT3606-GAME",
-			"documentPath": "src/documents/game_development_2D_action_platformer_documents.pdf"
+			"documentPath": "documents/game_development_2D_action_platformer_documents.pdf"
 		},
 		{
 			"title": "Twitch-Discord-API",
@@ -40,7 +40,7 @@
 			"about": "A desktop program written in Java. It was used for extracting metadata from images.",
 			"year": "2020",
 			"codeLink": "https://github.com/MikkelAas/MetIma",
-			"documentPath": "src/documents/metima_document.pdf"
+			"documentPath": "documents/metima_document.pdf"
 		}
 	]
 }
