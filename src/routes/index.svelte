@@ -34,7 +34,7 @@
 			<li><a href={GITHUB_LINK}>GitHub</a></li>
 		</ul>
 	</div>
-	<div class="body">
+	<div class="content">
 		<div class="education">
 			<h2>Education &#x1F393</h2>
 			{#each EDUCATIONS as education}
@@ -62,6 +62,9 @@
 			{/each}
 		</div>
 	</div>
+	<div class="footer">
+		<h3>🚀</h3>
+	</div>
 </div>
 
 <style>
@@ -70,7 +73,7 @@
 	}
 	.main {
 		display: grid;
-		grid-template-rows: 20% 70% 10%;
+		grid-template-rows: 20% auto 10%;
 		height: 100vh;
 		margin: 0;
 		border: 0;
@@ -78,9 +81,15 @@
 		font-family: 'Roboto', sans-serif;
 	}
 	.heading {
-		grid-row: 1/2;
+		grid-row-start: 1;
+		grid-row-end: 2;
 		justify-self: center;
 		align-self: center;
+		text-align: center;
+	}
+	.footer {
+		grid-row-start: 3;
+		grid-row-end: 4;
 		text-align: center;
 	}
 	#links {
@@ -106,10 +115,11 @@
 	:global(h3) {
 		font-weight: 500;
 	}
-	.body {
+	.content {
+		grid-row-start: 2;
+		grid-row-end: 3;
 		display: grid;
 		grid-template-columns: 20% 60% 20%;
-		grid-row: 2 / 3;
 	}
 	.education {
 		grid-column: 2/3;
