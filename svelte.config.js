@@ -16,7 +16,7 @@ const config = {
 		}),
 		paths: {
 			// change below to your repo name
-			base: dev ? '' : '/mikkelaas.github.io'
+			base: dev ? '' : 'mikkelaas.github.io'
 		}
 	}
 };
