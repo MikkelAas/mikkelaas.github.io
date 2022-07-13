@@ -1,8 +1,11 @@
 <script context="module">
 	import education from '../data/education.json';
+	import projects from '../data/projects.json';
 	import EducationCard from '../lib/EducationCard.svelte';
+	import ProjectCard from '../lib/ProjectCard.svelte';
 
 	const EDUCATIONS = education.education;
+	const PROJECTS = projects.projects;
 
 	export const prerender = true;
 
@@ -17,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
 		rel="stylesheet"
 	/>
 </head>
@@ -42,6 +45,19 @@
 					startDate={education.startDate}
 					endDate={education.endDate}
 					link={education.link}
+				/>
+			{/each}
+		</div>
+		<div class="projects">
+			<h2>Projects</h2>
+			{#each PROJECTS as project}
+				<ProjectCard
+					title={project.title}
+					about={project.about}
+					year={project.year}
+					codeLink={project.codeLink}
+					documentPath={project.documentPath}
+					articleLink={project.articeLink}
 				/>
 			{/each}
 		</div>
@@ -78,11 +94,17 @@
 	}
 
 	:global(a) {
-		text-decoration: none;
+		text-decoration: underline;
 		color: black;
 	}
 	:global(a):hover {
 		color: grey;
+	}
+	:global(h4, h5) {
+		font-weight: 400;
+	}
+	:global(h3) {
+		font-weight: 500;
 	}
 	.body {
 		display: grid;
@@ -90,6 +112,12 @@
 		grid-row: 2 / 3;
 	}
 	.education {
+		grid-column: 2/3;
+		margin: 10%;
+		margin-top: 0%;
+		margin-bottom: 5%;
+	}
+	.projects {
 		grid-column: 2/3;
 		margin: 10%;
 		margin-top: 0%;
