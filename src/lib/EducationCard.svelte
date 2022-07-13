@@ -7,17 +7,9 @@
 	export let link: string;
 </script>
 
-<div class="EducationCard">
+<div class="education-card">
 	<h3>{place}</h3>
 	<h4>{degree} in {studyProgram}</h4>
 	<h5>Start {startDate} - End {endDate}</h5>
 	<a href={link}>View site</a>
 </div>
-
-<style>
-	.EducationCard h3,
-	h4,
-	h5 {
-		font-weight: 400;
-	}
-</style>
