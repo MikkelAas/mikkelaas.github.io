@@ -13,3 +13,13 @@
 	<h5>Start {startDate} - End {endDate}</h5>
 	<a href={link}>View site &#x1F517</a>
 </div>
+
+<style>
+	:global(body.dark-mode) a {
+		text-decoration: underline;
+		color: #bfc2c7;
+	}
+	:global(body.dark-mode) a:hover {
+		color: rgb(121, 121, 121);
+	}
+</style>
