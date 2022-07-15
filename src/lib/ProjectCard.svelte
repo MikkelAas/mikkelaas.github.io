@@ -34,4 +34,14 @@
 	.project-card a {
 		margin-right: 1%;
 	}
+	:global(body.dark-mode) .project-card {
+		border-bottom: 0.01ch white solid;
+	}
+	:global(body.dark-mode) a {
+		text-decoration: underline;
+		color: #c6c6c6;
+	}
+	:global(body.dark-mode) a:hover {
+		color: rgb(121, 121, 121);
+	}
 </style>
