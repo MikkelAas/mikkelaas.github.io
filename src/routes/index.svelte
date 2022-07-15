@@ -1,4 +1,5 @@
 <script context="module">
+	import DarkModeToggle from '$lib/DarkModeToggle.svelte';
 	import education from '../data/education.json';
 	import projects from '../data/projects.json';
 	import EducationCard from '../lib/EducationCard.svelte';
@@ -27,6 +28,10 @@
 
 <div class="main">
 	<div class="heading">
+		<div id="options-bar">
+			<DarkModeToggle />
+		</div>
+
 		<h1>Mikkel Aas</h1>
 		<ul id="links">
 			<li><a href={LINKEDIN_LINK}>LinkedIn</a></li>
@@ -70,6 +75,7 @@
 <style>
 	:global(body) {
 		margin: 0;
+		transition: background-color 0.3s;
 	}
 	.main {
 		display: grid;
@@ -86,6 +92,7 @@
 		justify-self: center;
 		align-self: center;
 		text-align: center;
+		width: 100%;
 	}
 	.footer {
 		grid-row-start: 3;
@@ -131,5 +138,20 @@
 		grid-column: 2/3;
 		margin: 10%;
 		margin-top: 0%;
+	}
+	:global(body.dark-mode) {
+		background-color: #121212;
+		color: #bfc2c7;
+	}
+	:global(body.dark-mode) a {
+		text-decoration: underline;
+		color: #bfc2c7;
+	}
+	:global(body.dark-mode) a:hover {
+		color: rgb(121, 121, 121);
+	}
+	#options-bar {
+		text-align: left;
+		margin: 1%;
 	}
 </style>
