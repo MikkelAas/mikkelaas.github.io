@@ -1,11 +1,29 @@
 <script>
-	function toggle() {
-		window.document.body.classList.toggle('dark-mode');
-		isDarkMode = !isDarkMode;
-		sessionStorage.setItem('isDarkMode', isDarkMode.toString());
-	}
+	import { onMount } from 'svelte';
 
+	// keeps track of the dark mode status
 	let isDarkMode = false;
+
+	onMount(() => {
+		// when mounting, check what the previous dark mode state was
+		if (localStorage.getItem('isDarkMode')?.includes('true')) {
+			isDarkMode = true;
+			window.document.body.className = 'dark-mode';
+		} else {
+			isDarkMode = false;
+		}
+	});
+
+	function toggle() {
+		// togle dark mode class name
+		window.document.body.classList.toggle('dark-mode');
+
+		// change dark mode value
+		isDarkMode = !isDarkMode;
+
+		// save dark mode value to the local storage
+		localStorage.setItem('isDarkMode', isDarkMode.toString());
+	}
 </script>
 
 {#if isDarkMode}
