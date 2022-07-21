@@ -154,4 +154,11 @@
 		text-align: left;
 		margin: 1%;
 	}
+
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+		.content {
+			display: grid;
+			grid-template-columns: 5% 90% 5%;
+		}
+	}
 </style>
