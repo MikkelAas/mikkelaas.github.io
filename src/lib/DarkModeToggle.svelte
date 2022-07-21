@@ -17,7 +17,7 @@
 	function toggle() {
 		// togle dark mode class name
 		window.document.body.classList.toggle('dark-mode');
-		
+
 		// change dark mode value
 		isDarkMode = !isDarkMode;
 
