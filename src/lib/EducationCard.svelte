@@ -15,6 +15,16 @@
 </div>
 
 <style>
+	.education-card {
+		border-bottom: 0.01ch black solid;
+		padding-bottom: 5%;
+	}
+	.education-card a {
+		margin-right: 1%;
+	}
+	:global(body.dark-mode) .education-card {
+		border-bottom: 0.01ch white solid;
+	}
 	:global(body.dark-mode) a {
 		text-decoration: underline;
 		color: #bfc2c7;
