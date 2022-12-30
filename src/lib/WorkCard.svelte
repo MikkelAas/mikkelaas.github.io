@@ -1,8 +1,8 @@
 <script lang="ts">
-    type Duration = {
-        from: string,
-        to: string
-    }
+	type Duration = {
+		from: string;
+		to: string;
+	};
 
 	export let company: string;
 	export let jobTitle: string;
@@ -18,7 +18,7 @@
 <div class="work-card">
 	<h3>{company}</h3>
 	<h4>{jobTitle}</h4>
-    <p>Skills: {skills}</p>
+	<p>Skills: {skills}</p>
 	<h5>{duration.from} - {duration.to}</h5>
 	{#if typeof link !== 'undefined'}
 		<a href={link}>Website &#127760;</a>

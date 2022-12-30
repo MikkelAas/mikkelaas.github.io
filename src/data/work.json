@@ -1,14 +1,14 @@
 {
-    "work": [
-        {
-            "company": "Finn.no",
-            "jobTitle": "Software Engineer",
-            "skills": "Kotlin, Grafana, Kafka, Prometheus, PostgreSQL",
-            "duration": {
-                "from": "Sep 2022",
-                "to": "now"
-            },
-            "link": "https://www.finn.no/"
-        }
-    ]
+	"work": [
+		{
+			"company": "Finn.no",
+			"jobTitle": "Software Engineer",
+			"skills": "Kotlin, Grafana, Kafka, Prometheus, PostgreSQL",
+			"duration": {
+				"from": "Sep 2022",
+				"to": "now"
+			},
+			"link": "https://www.finn.no/"
+		}
+	]
 }

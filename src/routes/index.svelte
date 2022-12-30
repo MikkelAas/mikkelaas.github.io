@@ -3,7 +3,7 @@
 	import WorkCard from '$lib/WorkCard.svelte';
 	import education from '../data/education.json';
 	import projects from '../data/projects.json';
-	import work from '../data/work.json'
+	import work from '../data/work.json';
 	import EducationCard from '../lib/EducationCard.svelte';
 	import ProjectCard from '../lib/ProjectCard.svelte';
 
