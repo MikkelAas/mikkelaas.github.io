@@ -1,12 +1,15 @@
 <script context="module">
 	import DarkModeToggle from '$lib/DarkModeToggle.svelte';
+	import WorkCard from '$lib/WorkCard.svelte';
 	import education from '../data/education.json';
 	import projects from '../data/projects.json';
+	import work from '../data/work.json';
 	import EducationCard from '../lib/EducationCard.svelte';
 	import ProjectCard from '../lib/ProjectCard.svelte';
 
 	const EDUCATIONS = education.education;
 	const PROJECTS = projects.projects;
+	const WORK = work.work;
 
 	export const prerender = true;
 
@@ -50,6 +53,18 @@
 					startDate={education.startDate}
 					endDate={education.endDate}
 					link={education.link}
+				/>
+			{/each}
+		</div>
+		<div class="work">
+			<h2>Work &#x1f9f3</h2>
+			{#each WORK as work}
+				<WorkCard
+					company={work.company}
+					jobTitle={work.jobTitle}
+					skills={work.skills}
+					duration={work.duration}
+					link={work.link}
 				/>
 			{/each}
 		</div>
@@ -133,6 +148,11 @@
 		margin: 10%;
 		margin-top: 0%;
 		margin-bottom: 5%;
+	}
+	.work {
+		grid-column: 2/3;
+		margin: 10%;
+		margin-top: 0%;
 	}
 	.projects {
 		grid-column: 2/3;
