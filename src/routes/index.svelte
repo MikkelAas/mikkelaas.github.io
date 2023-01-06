@@ -83,11 +83,15 @@
 		</div>
 	</div>
 	<div class="footer">
-		<h3>🚀</h3>
+		<img id="rocket-gif" src="images/rocket.gif" alt="Flying rocket" />
 	</div>
 </div>
 
 <style>
+	#rocket-gif {
+		height: 50px;
+		width: 50px;
+	}
 	:global(body) {
 		margin: 0;
 		transition: background-color 0.3s;
@@ -110,9 +114,11 @@
 		width: 100%;
 	}
 	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		grid-row-start: 3;
 		grid-row-end: 4;
-		text-align: center;
 	}
 	#links {
 		list-style: none;
@@ -171,7 +177,7 @@
 		color: rgb(121, 121, 121);
 	}
 	#options-bar {
-		text-align: left;
+		text-align: right;
 		margin: 1%;
 	}
 
