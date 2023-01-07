@@ -46,8 +46,17 @@
 		min-height: 60px;
 		max-width: 150px;
 	}
+
+	button:hover {
+		background-color: #2c2c2c;
+	}
+
 	:global(body.dark-mode) button {
 		background-color: #ffffff;
 		color: black;
+	}
+
+	:global(body.dark-mode) button:hover {
+		background-color: #efefef;
 	}
 </style>
