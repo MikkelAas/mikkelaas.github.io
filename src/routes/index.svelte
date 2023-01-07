@@ -89,8 +89,8 @@
 
 <style>
 	#rocket-gif {
-		height: 50px;
-		width: 50px;
+		height: 50%;
+		max-height: 200px;
 	}
 	:global(body) {
 		margin: 0;
@@ -100,6 +100,7 @@
 		display: grid;
 		grid-template-rows: 20% auto 10%;
 		height: 100vh;
+		min-height: 960px;
 		margin: 0;
 		border: 0;
 		padding: 0;
@@ -147,7 +148,7 @@
 		grid-row-start: 2;
 		grid-row-end: 3;
 		display: grid;
-		grid-template-columns: 20% 60% 20%;
+		grid-template-columns: 25% 50% 25%;
 	}
 	.education {
 		grid-column: 2/3;
@@ -181,10 +182,10 @@
 		margin: 1%;
 	}
 
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	@media only screen and (min-device-width: 0px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 		.content {
 			display: grid;
-			grid-template-columns: 5% 90% 5%;
+			grid-template-columns: 1% 98% 1%;
 		}
 	}
 </style>

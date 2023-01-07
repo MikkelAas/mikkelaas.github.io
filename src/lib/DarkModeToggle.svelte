@@ -40,6 +40,11 @@
 		border-radius: 4px;
 		padding: 0.5rem;
 		text-transform: uppercase;
+		width: 15%;
+		height: 15%;
+		min-width: 50px;
+		min-height: 60px;
+		max-width: 150px;
 	}
 	:global(body.dark-mode) button {
 		background-color: #ffffff;
