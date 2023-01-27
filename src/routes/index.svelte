@@ -1,5 +1,6 @@
 <script context="module">
 	import DarkModeToggle from '$lib/DarkModeToggle.svelte';
+	import LanguageSelector from '$lib/LanguageSelector.svelte';
 	import WorkCard from '$lib/WorkCard.svelte';
 	import education from '../data/education.json';
 	import projects from '../data/projects.json';
@@ -33,6 +34,7 @@
 	<div class="heading">
 		<div id="options-bar">
 			<DarkModeToggle />
+			<LanguageSelector />
 		</div>
 
 		<h1>Mikkel Aas</h1>
